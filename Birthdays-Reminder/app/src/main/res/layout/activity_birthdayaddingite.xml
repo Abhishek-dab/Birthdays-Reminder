@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#A4D8EF"
+    android:id="@+id/layout"
+    tools:context=".birthday"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbara"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:title="Add Birthday"
+        android:background="#FFEB3B"/>
+    <!-- TODO: Update blank fragment layout -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:src="@drawable/user1"
+            android:layout_marginTop="20dp"
+            android:onClick="gallery1"
+        android:id="@+id/img"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:fontFamily="@font/muli"
+    android:text="Add Image *"
+    android:textColor="@android:color/black"
+    android:textSize="20sp"
+    android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:fontFamily="@font/muli"
+            android:hint="Add Date of Birth"
+            android:id="@+id/anndat"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter 1900 if year is not known"
+            android:fontFamily="@font/muli"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#2B3C17"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Import from Contacts"
+        android:onClick="contacts1"
+        android:id="@+id/contacts1"
+        android:textColor="#DA1A1A"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="textCapWords"
+        android:hint="Enter the Name"
+        android:textColorHint="#081709"
+        android:layout_gravity="center"
+        android:fontFamily="@font/muli"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit"
+        android:padding="15dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/phnum"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Enter the Number"
+        android:textColorHint="#081709"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/muli"
+        android:background="@drawable/edit"
+        android:padding="15dp"
+        />
+
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Save"
+        android:id="@+id/savebutton"
+        android:textColor="#DA1A1A"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/birthday">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/heart">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

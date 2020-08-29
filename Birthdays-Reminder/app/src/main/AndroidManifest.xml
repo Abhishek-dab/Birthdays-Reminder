@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.internshipproject">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.alarm.permission.SET_ALARM"/>
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Add_others_activity"></activity>
+        <activity android:name=".anniv_card" />
+        <activity android:name=".add_anniv_activity" />
+        <activity android:name=".Reg_Activity" />
+        <activity android:name=".login" />
+        <activity android:name=".example" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".settings"
+            android:parentActivityName=".MainActivity"
+          />
+        <activity android:name=".birthdayaddingitems" />
+        <activity android:name=".MainActivity"/>
+            <receiver android:name=".workmanager"
+            android:launchMode="singleTop"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
